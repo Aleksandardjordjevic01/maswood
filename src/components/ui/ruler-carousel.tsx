@@ -11,7 +11,7 @@ export interface CarouselItem {
 
 // Create infinite items by triplicating the array
 const createInfiniteItems = (originalItems: CarouselItem[]) => {
-  const items = [];
+  const items: (CarouselItem & { originalIndex: number })[] = [];
   for (let i = 0; i < 3; i++) {
     originalItems.forEach((item, index) => {
       items.push({
