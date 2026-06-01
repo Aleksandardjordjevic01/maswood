@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="flex-1 flex items-center max-w-7xl mx-auto w-full px-8 pt-10 pb-20 relative">
+    <section className="flex-1 flex items-center max-w-7xl mx-auto w-full px-5 sm:px-8 pt-10 pb-20 relative">
       {/* Left content */}
       <div className="flex flex-col w-full lg:w-1/2 z-10">
         {/* Label */}
@@ -9,7 +9,7 @@ export default function Hero() {
         </p>
 
         {/* Heading */}
-        <h1 className="font-bold text-5xl xl:text-7xl leading-[1.1] mb-5 max-w-lg">
+        <h1 className="font-bold text-4xl sm:text-5xl xl:text-7xl leading-[1.1] mb-5 max-w-lg">
           <span className="text-white">Vaš prostor.</span>
           <br />
           <span className="text-[#cc9a6e]">Naša ideja.</span>
@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="w-10 h-[2px] bg-[#cc9a6e] mb-6" />
 
         {/* Subheading */}
-        <p className="text-white/90 text-base leading-relaxed mb-10 max-w-sm">
+        <p className="text-white/90 text-sm sm:text-base leading-relaxed mb-10 max-w-sm">
           Kreiramo funkcionalan i estetski savršen nameštaj koji se uklapa u vaš stil i potrebe.
         </p>
 

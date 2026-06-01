@@ -50,7 +50,7 @@ export default function ContactSection() {
   return (
     <section
       id="kontakt"
-      className="bg-[#e9d6bf] overflow-hidden -mx-5 relative min-h-[520px]"
+      className="bg-[#e9d6bf] overflow-hidden -mx-5 relative lg:min-h-[520px]"
       style={{ fontFamily: "var(--font-montserrat)" }}
     >
       {/* Map — absolutely covers from 50% to right edge */}
@@ -66,18 +66,18 @@ export default function ContactSection() {
       {/* Content grid — constrained to 1216px */}
       <div className="relative flex flex-col lg:flex-row min-h-[520px] mx-auto w-full" style={{ maxWidth: "1216px" }}>
         {/* Left — Form */}
-        <div className="flex-1 px-8 lg:pr-24 py-16 lg:py-20 flex flex-col justify-center">
+        <div className="flex-1 px-4 sm:px-8 lg:pr-24 py-10 sm:py-14 lg:py-20 flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] leading-tight mb-4">
               Razgovarajmo<br />o vašem projektu.
             </h2>
-            <p className="text-[#6b4f35] text-sm leading-relaxed mb-10 max-w-sm">
-              Bilo da planirate kuhinju po meri, garderober ili kompletno opremanje prostora — tu smo da zajedno pronađemo najbolje rešenje.
+            <p className="text-[#6b4f35] text-sm leading-relaxed text-justify mb-6 sm:mb-10 max-w-sm">
+              Bilo da planirate kuhinju po meri, garderober ili kompletno opremanje prostora tu smo da zajedno pronađemo najbolje rešenje.
             </p>
 
             {sent ? (
@@ -155,6 +155,11 @@ export default function ContactSection() {
               </form>
             )}
           </motion.div>
+        </div>
+
+        {/* Mobile/Tablet Map */}
+        <div className="lg:hidden w-full h-64 sm:h-80">
+          <Map center={[20.4468, 44.8922]} zoom={14} />
         </div>
 
         {/* Spacer — map sits behind this */}

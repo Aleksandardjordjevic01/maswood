@@ -121,12 +121,12 @@ const TestimonialSlider: React.FC = () => {
   };
 
   return (
-    <section className="px-4 py-16 bg-[#f8f8f8] overflow-hidden" style={{ fontFamily: 'var(--font-montserrat)' }}>
+    <section className="px-4 sm:px-6 py-10 md:py-16 bg-[#f8f8f8] overflow-hidden" style={{ fontFamily: 'var(--font-montserrat)' }}>
       <div className="mx-auto" style={{ maxWidth: '1216px' }}>
         {/* Header */}
-        <div className="flex items-end justify-between mb-12">
+        <div className="flex items-end justify-between mb-8 md:mb-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tighter text-[#1a1a1a]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter text-[#1a1a1a]">
               Šta naši klijenti kažu
             </h2>
           </div>

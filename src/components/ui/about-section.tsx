@@ -76,18 +76,18 @@ export default function AboutSection3() {
         {/* Main Content */}
         <div className="grid md:grid-cols-1 gap-8">
           <div className="md:col-span-1">
-            <h1 className="sm:text-4xl md:text-4xl text-2xl !leading-[110%] font-semibold text-gray-900 mb-8">
+            <h1 className="text-xl sm:text-3xl md:text-4xl leading-[110%] font-semibold text-gray-900 mb-8">
               Nameštaj koji priča vašu priču.
             </h1>
 
             <div className="grid md:grid-cols-2 gap-8 text-gray-600">
-              <div className="sm:text-sm text-xs">
-                <p className="leading-relaxed text-justify">
+              <div className="text-sm md:text-base">
+                <p className="leading-relaxed">
                   MasWood je porodična firma specijalizovana za izradu nameštaja po meri, sa fokusom na kvalitet, funkcionalnost i bezvremenski dizajn. Svaki projekat prilagođavamo prostoru i potrebama klijenta, stvarajući rešenja koja savršeno spajaju estetiku i praktičnost.
                 </p>
               </div>
-              <div className="sm:text-sm text-xs">
-                <p className="leading-relaxed text-justify">
+              <div className="text-sm md:text-base">
+                <p className="leading-relaxed">
                   Od prve ideje do završne montaže, vodimo računa o svakom detalju. Koristimo pažljivo odabrane materijale, savremene tehnologije i preciznu obradu kako bismo kreirali nameštaj koji traje, oplemenjuje prostor i pruža svakodnevnu udobnost.
                 </p>
               </div>

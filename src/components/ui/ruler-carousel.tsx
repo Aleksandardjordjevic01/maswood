@@ -11,7 +11,7 @@ export interface CarouselItem {
 
 // Create infinite items by triplicating the array
 const createInfiniteItems = (originalItems: CarouselItem[]) => {
-  const items: (CarouselItem & { originalIndex: number })[] = [];
+  const items: (Omit<CarouselItem, "id"> & { id: string; originalIndex: number })[] = [];
   for (let i = 0; i < 3; i++) {
     originalItems.forEach((item, index) => {
       items.push({
@@ -42,11 +42,13 @@ const RulerLines = ({
     let color = "bg-gray-500 dark:bg-gray-400";
 
     if (isCenter) {
-      height = "h-8";
+      height = "h-10 md:h-8";
       color = "bg-primary dark:bg-white";
     } else if (isFifth) {
-      height = "h-4";
+      height = "h-6 md:h-4";
       color = "bg-primary dark:bg-white";
+    } else {
+      height = "h-4 md:h-3";
     }
 
     const positionClass = top ? "" : "bottom-0";
@@ -60,7 +62,7 @@ const RulerLines = ({
     );
   }
 
-  return <div className="relative w-full h-8 px-4">{lines}</div>;
+  return <div className="relative w-full h-10 md:h-8 px-4">{lines}</div>;
 };
 
 export function RulerCarousel({
@@ -200,7 +202,7 @@ export function RulerCarousel({
                 <motion.button
                   key={item.id}
                   onClick={() => handleItemClick(index)}
-                  className={`text-4xl md:text-6xl font-bold whitespace-nowrap cursor-pointer flex items-center justify-center ${
+                  className={`text-xl sm:text-2xl md:text-6xl font-bold whitespace-nowrap cursor-pointer flex items-center justify-center ${
                     isActive
                       ? "text-primary dark:text-white"
                       : "text-muted-foreground dark:text-gray-500 hover:text-foreground dark:hover:text-gray-400"

@@ -25,20 +25,20 @@ export default function GallerySection() {
   };
 
   return (
-    <section id="galerija" className="py-16 px-4" style={{ fontFamily: "var(--font-montserrat)" }}>
+    <section id="galerija" className="py-10 md:py-16 px-4 sm:px-6" style={{ fontFamily: "var(--font-montserrat)" }}>
       <div className="mx-auto" style={{ maxWidth: "1216px" }}>
         {/* Header */}
-        <div className="mb-12">
-          <p className="text-[#cc9a6e] text-sm font-semibold uppercase tracking-widest mb-3">
+        <div className="mb-8 md:mb-12">
+          <p className="text-[#cc9a6e] text-xs sm:text-sm font-semibold uppercase tracking-widest mb-2 sm:mb-3">
             Naši radovi
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-[#1a1a1a]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-[#1a1a1a]">
             Galerija.
           </h2>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
           {images.map((img, i) => (
             <motion.div
               key={i}

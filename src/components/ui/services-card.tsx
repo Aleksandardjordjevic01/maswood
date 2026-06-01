@@ -5,13 +5,12 @@ import { motion, useInView } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import useEmblaCarousel, {
-  type EmblaCarouselType,
-  type EmblaOptionsType,
+  type UseEmblaCarouselType,
 } from "embla-carousel-react";
 import { Button } from "@/components/ui/button";
 
 // --- Types ---
-type CarouselApi = EmblaCarouselType | undefined;
+type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
 type CarouselOptions = UseCarouselParameters[0];
 type CarouselPlugin = UseCarouselParameters[1];
@@ -152,7 +151,7 @@ const ServiceCard = ({ service, index }: { service: Service; index: number }) =>
     <motion.div
       variants={cardVariants}
       className={cn(
-        "relative flex h-[450px] w-full flex-col justify-between overflow-hidden rounded-3xl p-8",
+        "relative flex h-[400px] sm:h-[420px] md:h-[450px] w-full flex-col justify-between overflow-hidden rounded-3xl p-5 sm:p-6 md:p-8",
         service.image ? "" : `bg-gradient-to-r ${service.gradient}`
       )}
       style={service.image ? { backgroundImage: `url('${service.image}')`, backgroundSize: "cover", backgroundPosition: "center" } : undefined}
