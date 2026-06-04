@@ -1,6 +1,14 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+function escapeHtml(str: string) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 export async function POST(req: Request) {
   const { name, email, service, message } = await req.json();
 
@@ -22,13 +30,13 @@ export async function POST(req: Request) {
     from: `"Maswood Forma" <${process.env.SMTP_USER}>`,
     to: process.env.CONTACT_EMAIL,
     replyTo: email,
-    subject: `Nova poruka sa sajta — ${service || "Opšto"}`,
+    subject: `Nova poruka sa sajta — ${escapeHtml(service || "Opšto")}`,
     html: `
       <h2>Nova poruka sa maswood.rs</h2>
-      <p><strong>Ime:</strong> ${name}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Usluga:</strong> ${service || "—"}</p>
-      <p><strong>Poruka:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>
+      <p><strong>Ime:</strong> ${escapeHtml(name)}</p>
+      <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+      <p><strong>Usluga:</strong> ${escapeHtml(service || "—")}</p>
+      <p><strong>Poruka:</strong><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>
     `,
   });
 

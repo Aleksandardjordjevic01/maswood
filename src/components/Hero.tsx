@@ -20,7 +20,7 @@ export default function Hero() {
 
         {/* Subheading */}
         <p className="text-white/90 text-sm sm:text-base leading-relaxed mb-10 max-w-sm">
-          Izrada nameštaja po meri u Beogradu kuhinje, garderoberi, dnevne sobe i nameštaj na meru. Kvalitet i preciznost u svakom komadu.
+          Izrada nameštaja po meri u Beogradu. Kuhinje, garderoberi, dnevne sobe i nameštaj po Vašoj želji. Kvalitet i preciznost u svakom komadu.
         </p>
 
         {/* Button */}
