@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
 const images = [
-  { src: "/gallery/slika1.jpeg", alt: "Maswood radovi" },
-  { src: "/gallery/slika2.jpeg", alt: "Maswood radovi" },
-  { src: "/gallery/slika3.jpeg", alt: "Maswood radovi" },
-  { src: "/gallery/slika4.jpeg", alt: "Maswood radovi" },
-  { src: "/gallery/slika5.jpeg", alt: "Maswood radovi" },
+  { src: "/gallery/slika1.jpeg", alt: "Maswood kuhinja po meri Beograd" },
+  { src: "/gallery/slika2.jpeg", alt: "Maswood garderober po meri Beograd" },
+  { src: "/gallery/slika3.jpeg", alt: "Maswood nameštaj po meri Beograd" },
+  { src: "/gallery/slika4.jpeg", alt: "Maswood dnevna soba po meri Beograd" },
+  { src: "/gallery/slika5.jpeg", alt: "Maswood izrada nameštaja Beograd" },
 ];
 
 export default function GallerySection() {

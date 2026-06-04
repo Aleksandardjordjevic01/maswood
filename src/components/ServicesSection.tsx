@@ -46,7 +46,7 @@ export default function ServicesSection() {
       style={{ fontFamily: "var(--font-montserrat)" }}
     >
       <div className="text-left w-full mb-6" style={{ maxWidth: "1216px" }}>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter text-[#1a1a1a]">Usluge</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tighter text-[#1a1a1a]">Nameštaj po meri — naše usluge u Beogradu</h2>
       </div>
       <ServiceCarousel services={services} />
     </div>

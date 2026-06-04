@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
-    <section className="flex-1 flex items-center max-w-7xl mx-auto w-full px-5 sm:px-8 pt-10 pb-20 relative">
+    <section aria-label="Maswood — Nameštaj po meri Beograd" className="flex-1 flex items-center max-w-7xl mx-auto w-full px-5 sm:px-8 pt-10 pb-20 relative">
       {/* Left content */}
       <div className="flex flex-col w-full lg:w-1/2 z-10">
         {/* Label */}
         <p className="text-xs uppercase tracking-[0.2em] text-[#cc9a6e] mb-6 font-bold">
-          Nameštaj po meri
+          Nameštaj po meri — Beograd, Srbija
         </p>
 
         {/* Heading */}
@@ -20,7 +20,7 @@ export default function Hero() {
 
         {/* Subheading */}
         <p className="text-white/90 text-sm sm:text-base leading-relaxed mb-10 max-w-sm">
-          Kreiramo funkcionalan i estetski savršen nameštaj koji se uklapa u vaš stil i potrebe.
+          Izrada nameštaja po meri u Beogradu kuhinje, garderoberi, dnevne sobe i nameštaj na meru. Kvalitet i preciznost u svakom komadu.
         </p>
 
         {/* Button */}
