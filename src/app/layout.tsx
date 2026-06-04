@@ -15,7 +15,26 @@ export const metadata: Metadata = {
   title: "Maswood — Nameštaj po meri",
   description: "Kuhinje, garderoberi i nameštaj po meri. Kvalitet i preciznost u svakom komadu.",
   icons: {
-    icon: "/symbol.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+  },
+  openGraph: {
+    title: "Maswood — Nameštaj po meri",
+    description: "Kuhinje, garderoberi i nameštaj po meri. Kvalitet i preciznost u svakom komadu.",
+    url: "https://maswood.rs",
+    siteName: "Maswood",
+    images: [
+      {
+        url: "/images/hero-bg.png",
+        width: 1200,
+        height: 630,
+        alt: "Maswood — Nameštaj po meri",
+      },
+    ],
+    locale: "sr_RS",
+    type: "website",
   },
 };
 
